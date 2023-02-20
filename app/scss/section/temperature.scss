@@ -1,0 +1,26 @@
+.temperature {
+  // .temperature__box
+  &__box {
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .temperature__image
+  &__image {
+    // position: absolute;
+  }
+
+  // .temperature__num
+  &__num {
+    font-size: 180px;
+    line-height: 216px;
+    text-align: center;
+  }
+  // .temperature__info
+  &__info {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

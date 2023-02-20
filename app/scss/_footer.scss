@@ -1,0 +1,21 @@
+.footer {
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  // .weather-info__box
+  &__box {
+  }
+  // .weather-info__index
+  &__index {
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.6;
+  }
+  // .weather-info__data
+  &__data {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

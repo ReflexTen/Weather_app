@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicons/site.webmanifest" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="favicons/site.webmanifest" />
 
-    <title>Weather</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
 
-  <body></body>
-</html>
-
-
-  <header class="header">
-  
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__box">
+      <div class="header__location">
+        <h2 class="header__city">Уфа</h2>
+        <div class="header__selection selection">
+          <div class="selection__city">Сменить город</div>
+          <div class="selection__location">Мое местоположение</div>
+        </div>
+      </div>
+      <ul class="header__measure measure">
+        <li class="measure__degrees measure__degrees--active">C</li>
+        <li class="measure__degrees">F</li>
+      </ul>
+    </div>
+  </div>
 </header>
 
-  <main class="main">
-    <h1 class="sr-only">
-      
-    </h1>
 
+    <main class="main">
+      <h1 class="sr-only">Температура</h1>
 
-  </main>
+      <section class="temperature">
+  <div class="container">
+    <div class="temperature__box">
+      <img
+        class="temperature__image"
+        src="/images/pictures/cloudy.png"
+        alt=""
+      />
+      <h1 class="temperature__num">19</h1>
+    </div>
+    <div class="temperature__info">Преимущественно солнечно</div>
+  </div>
+</section>
 
-  <footer class="footer">
-  
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <ul class="weather-info">
+      <li class="weather-info__box">
+        <div class="weather-info__index">Ветер</div>
+        <div class="weather-info__data">5 м/c, западный</div>
+      </li>
+
+      <li class="weather-info__box">
+        <div class="weather-info__index">Давление</div>
+        <div class="weather-info__data">752 мм рт. ст.</div>
+      </li>
+
+      <li class="weather-info__box">
+        <div class="weather-info__index">Влажность</div>
+        <div class="weather-info__data">60%</div>
+      </li>
+
+      <li class="weather-info__box">
+        <div class="weather-info__index">Облачность</div>
+        <div class="weather-info__data">10%</div>
+      </li>
+    </ul>
+  </div>
 </footer>
 
-  <script src="js/main.min.js"></script>
-</body>
 
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

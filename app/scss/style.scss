@@ -7,17 +7,13 @@
 
 //Подключение компонентов
 
-
-
 //Подключение секций//************************
 
-//header
-// @import 'header';
+// header
+@import 'header';
 
-//main
-
-
-
+// main
+@import 'section/temperature';
 
 //footer
-// @import 'footer';
+@import 'footer';

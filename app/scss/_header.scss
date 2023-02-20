@@ -1,0 +1,74 @@
+.header {
+  // .header__box
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // .header__location
+  &__location {
+    max-width: 378px;
+    width: 100%;
+  }
+  // .header__city
+  &__city {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  // .header__selection
+  &__selection {
+  }
+  // .header__measure
+  &__measure {
+  }
+}
+.container {
+}
+.selection {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.6;
+  // .selection__city
+  &__city {
+    cursor: pointer;
+  }
+  // .selection__location
+  &__location {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -30px;
+      width: 30px;
+      height: 30px;
+      mask: url('../images/sprites/sprite.svg#location') center / cover
+        no-repeat;
+      background-color: white;
+    }
+  }
+}
+.measure {
+  display: flex;
+  justify-content: space-between;
+  max-width: 77px;
+  width: 100%;
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+
+  // .measure__degrees
+  &__degrees {
+    max-width: 38.5px;
+    width: 100%;
+    padding: 3px 14px;
+    cursor: pointer;
+    &--active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
