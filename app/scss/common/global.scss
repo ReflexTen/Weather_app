@@ -11,6 +11,10 @@ body {
   color: white;
   letter-spacing: 0.03em;
   background-color: #498cec;
+
+  @include media-4 {
+    padding: 35px 0 70px;
+  }
 }
 
 .sr-only {

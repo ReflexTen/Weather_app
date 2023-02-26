@@ -1,4 +1,7 @@
 .temperature {
+  @include media-4 {
+    margin-bottom: 20px;
+  }
   // .temperature__box
   &__box {
     // position: relative;
@@ -8,7 +11,11 @@
   }
   // .temperature__image
   &__image {
-    // position: absolute;
+    // width: 350px;
+    // height: 350px;
+    @include media-4 {
+      width: 100px;
+    }
   }
 
   // .temperature__num
@@ -16,11 +23,35 @@
     font-size: 180px;
     line-height: 216px;
     text-align: center;
+
+    @include media-4 {
+      font-size: 140px;
+      line-height: 190px;
+    }
   }
   // .temperature__info
   &__info {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
+  }
+
+  // .temperature__measure
+  &__measure {
+    align-items: start;
+    font-size: 90px;
+    margin-bottom: auto;
+
+    @include media-4 {
+      font-size: 60px;
+    }
+  }
+  // .temperature__measure-celcius
+  &__measure-celcius {
+    display: block;
+  }
+  // .temperature__measure-fahrenheit
+  &__measure-fahrenheit {
+    display: none;
   }
 }
